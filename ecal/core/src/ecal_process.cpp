@@ -42,8 +42,8 @@
 
 	#include "sys_usage.h"
 
-	#include <stdlib.h>
-	#include <stdio.h>
+	#include <cstdlib>
+	#include <cstdio>
 	#include <string>
 	#include <cstring>
 	#include <atomic>
@@ -56,15 +56,15 @@
 
 	#ifdef ECAL_OS_LINUX
 	#include <spawn.h>
-	#include <signal.h>
+	#include <csignal>
 	#include <unistd.h>
-	#include <string.h>
+	#include <cstring>
 	#include <sys/wait.h>
 	#include <sys/types.h>
 	#include <sys/stat.h>
 	#include <sys/file.h>
 	#include <sys/select.h>
-	#include <limits.h>
+	#include <climits>
 	#include <netinet/in.h>
 
 	#include "ecal_process_stub.h"
