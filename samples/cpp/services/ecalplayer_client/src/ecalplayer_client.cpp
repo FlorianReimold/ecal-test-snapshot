@@ -85,6 +85,7 @@ void OnPlayerResponse(const struct eCAL::SServiceResponse& service_response_)
 // main entry
 int main(int argc, char **argv)
 {
+  std::cout << "EAB: random change\n";
   // initialize eCAL API
   eCAL::Initialize(argc, argv, "ecalplayer client");
 
